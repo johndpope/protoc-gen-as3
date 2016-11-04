@@ -40,16 +40,11 @@ Unlike other protobuf's as3 compilers, protoc-gen-as3 does not require you to mo
 
 
 ##  USE RVM - Ruby Version Manager https://rvm.io/
-`curl -sSL https://get.rvm.io | bash    
-
+curl -sSL https://get.rvm.io | bash    
 rvm install ruby-2.2.3     
-
 gem install rvm  (restart terminal)        
-
 gem install bundler    
-
 bundle install   
-`
 
 `protoc --plugin=protoc-gen-as3=`_`path/to/protoc-gen-as3[.bat]`_` --as3_out=`_`output-path your.proto`_
 
