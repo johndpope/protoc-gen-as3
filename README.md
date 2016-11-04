@@ -37,6 +37,15 @@ Dowload and extract this [tarball](https://github.com/Atry/protoc-gen-as3/releas
 
 Unlike other protobuf's as3 compilers, protoc-gen-as3 does not require you to modify original protobuf's source code. You can just use protoc binary (version 2.3+) with this plugin to generate ActionScript 3 source code:
 
+
+
+##  USE RVM - Ruby Version Manager https://rvm.io/
+curl -sSL https://get.rvm.io | bash    
+rvm install ruby-2.2.3   
+gem install rvm  (restart terminal)      
+gem install bundler  
+bundle install  
+
 `protoc --plugin=protoc-gen-as3=`_`path/to/protoc-gen-as3[.bat]`_` --as3_out=`_`output-path your.proto`_
 
 ## Write your own code
