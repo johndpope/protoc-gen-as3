@@ -10,10 +10,17 @@ addons:
     - protobuf-compiler
 
 before_install:
+  - gem update --system
+  - curl -sSL https://get.rvm.io | bash    
+  - rvm install ruby-2.2.3   
+  - gem install rvm   
+  - gem install bundler
   - wget http://download.macromedia.com/pub/flex/sdk/flex_sdk_3.6.zip
   - unzip -d $HOME/flex_sdk flex_sdk_3.6.zip
 
 install:
+ 
+  - bundle install
   - haxelib install haxelib-run
   - git clone --branch v2.6.1 --depth 1 https://github.com/google/protobuf.git
   - |
